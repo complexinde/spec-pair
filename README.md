@@ -1,6 +1,11 @@
-> Current frontend candidate: revision003, official genlayer-js1.1.8, 126 frontend tests/30 actual contract SDK tests. New independent peer/publication/live validation pending at local freeze. Revision002 is superseded after a reproduced SDK fallback replay risk;003 adds a per-act one-shot wallet gate. See FRONTEND_REVISION_003.md. The original package README below and its old test counts/closed peer/publication nulls are historical, not current frontend or deployment conclusions.
-
 # SpecPair
+
+## Verified main workflow — 2026-10-22 (Asia/Shanghai)
+
+The public [app](https://complexinde.github.io/spec-pair/) completed Open → Derive → Owner confirm on Stable Studio61999 with one operator. Record **SpecH1022A** at **0x34d2DF8E89d7B5817412D5645104fb8DD6c113B4** is **CONFIRMED, revision2**: L1→R2 and L2→R1,2 matches, total cost2; L3/R3 unmatched. All three value0 transactions reached FINALIZED/NORMAL/MAJORITY_AGREE with one successful current leader.
+
+[Exact verification steps](LIVE_WALKTHROUGH.md) · [public evidence](evidence/live/main-workflow.json). Revoke is implemented and locally tested, but was not executed live. Inputs are synthetic; this does not prove real identity, delivery, adoption or independent users. Earlier revision notes retain their original historical scope.
+
 
 Globally reconcile two declared record lists, maximizing admissible one-to-one matches before minimizing exact integer mismatch cost.
 

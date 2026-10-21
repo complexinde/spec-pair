@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-21T17:49:23.349Z",
+  "profileSeq": 7,
+  "project": "SpecPair",
+  "chainId": 61999,
+  "owner": "0x853c1f6c84ad7b01ab51695228a643da26d795ca",
+  "contract": "0x34d2DF8E89d7B5817412D5645104fb8DD6c113B4",
+  "frontendURL": "https://complexinde.github.io/spec-pair/",
+  "frontendCommit": "a92917262bc5cd210346630bea1c5f7aa24aec2a",
+  "frontendRevision": 3,
+  "mainWorkflowVerified": true,
+  "scope": "Open -> Derive -> Owner confirm; Revoke is covered by local tests but was not executed live.",
+  "recordId": "SpecH1022A",
+  "finalStatus": "CONFIRMED",
+  "finalRevision": 2,
+  "certificate": "fe373cf481604198c66adc3100637652bb525b3180e9ceae16164fe6dc74fae8",
+  "result": {
+    "matchedCount": 2,
+    "totalCost": 2,
+    "pairs": [
+      {
+        "cost": 1,
+        "left": "L1",
+        "right": "R2",
+        "tick_delta": 0,
+        "value_delta": 1
+      },
+      {
+        "cost": 1,
+        "left": "L2",
+        "right": "R1",
+        "tick_delta": 0,
+        "value_delta": 1
+      }
+    ],
+    "unmatchedLeft": [
+      "L3"
+    ],
+    "unmatchedRight": [
+      "R3"
+    ]
+  },
+  "transactions": [
+    {
+      "method": "open_pair",
+      "hash": "0x289bf8502ddd51235bc3588705bc5f4a5d4884ed2a79466a04d8c0e7404a038c",
+      "evidence": "07-spec-pair-live-open-finalized-001.json"
+    },
+    {
+      "method": "derive_pair",
+      "hash": "0x67a1c5206b4a6fddc842c9c2014bd7a18ff0827779d3f85d83be88d577eb668b",
+      "evidence": "07-spec-pair-live-derive-finalized-001.json"
+    },
+    {
+      "method": "confirm_pair",
+      "hash": "0x06be650471a4fc7f150c4d4888913b56291ba2f4efe994afc5cea31039d5cb17",
+      "evidence": "07-spec-pair-live-confirm-finalized-001.json"
+    }
+  ],
+  "allTransactionsFinalizedNormalMajorityUniqueLeaderSuccess": true,
+  "allValuesZero": true,
+  "publicSourcesAndPolicyExact": true,
+  "syntheticInputsOnly": true,
+  "oneUserControlsWallet": true,
+  "independentUserAdoptionClaimed": false,
+  "actualPortalSubmitted": false
+}

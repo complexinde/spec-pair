@@ -13,6 +13,7 @@
   "constructorConsensus": "MAJORITY_AGREE",
   "constructorValue": 0,
   "sourceReadbackVerified": true,
-  "scope": "Constructor only; frontend business lifecycle not yet verified",
-  "fixtureCommit": "6ffb9c8cebc523e71923122608d53b57aa5d0c77"
+  "scope": "Constructor metadata; separately recorded actual frontend Open/Derive/Owner confirm main workflow.",
+  "fixtureCommit": "6ffb9c8cebc523e71923122608d53b57aa5d0c77",
+  "mainWorkflowEvidence": "evidence/live/main-workflow.json"
 }

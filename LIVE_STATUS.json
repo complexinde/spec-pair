@@ -1,32 +1,71 @@
 {
-  "recordedAt": "2026-10-21T17:20:39.834Z",
-  "title": "SpecPair",
+  "recordedAt": "2026-10-21T17:51:07.304Z",
+  "project": "SpecPair",
   "frontendRevision": 3,
+  "frontendCommit": "a92917262bc5cd210346630bea1c5f7aa24aec2a",
   "SDK": "genlayer-js@1.1.8 official unchanged",
-  "localReview": "PASS_WITHIN_REVIEWED_SCOPE",
-  "peerEvidence": "evidence/frontend-revision-003/independent-review.json",
-  "hostingURL": "https://complexinde.github.io/spec-pair/",
-  "publicAssetsThisRevisionVerified": false,
-  "businessFlowVerified": false,
-  "actualProjectSubmitted": false,
-  "constructor": {
-    "profileSeq": 7,
-    "title": "SpecPair",
-    "network": "GenLayer Studio",
-    "chainId": 61999,
-    "contractAddress": "0x34d2DF8E89d7B5817412D5645104fb8DD6c113B4",
-    "constructorTransactionHash": "0x546f0c8c2414bd22d1ebb1211f5602287e8d80269c85bddcca0c757a6d1f0560",
-    "ownerWallet": "0x853c1f6C84aD7B01aB51695228a643Da26d795ca",
-    "sourceSha256": "135f33e7a0eb1e1da4de08f78d7d0bb6ea8029829379b150a1803d959cf6e1ae",
-    "constructorStatus": "FINALIZED",
-    "constructorExecutionMode": "NORMAL",
-    "constructorExecutionResult": "SUCCESS",
-    "constructorConsensus": "MAJORITY_AGREE",
-    "constructorValue": 0,
-    "sourceReadbackVerified": true,
-    "scope": "Constructor only; frontend business lifecycle not yet verified",
-    "fixtureCommit": "6ffb9c8cebc523e71923122608d53b57aa5d0c77"
+  "publicSourceAndServedAssetsVerified": true,
+  "mainWorkflowVerified": true,
+  "scope": "Open -> Derive -> Owner confirm; Revoke is covered by local tests but was not executed live.",
+  "chainId": 61999,
+  "contract": "0x34d2DF8E89d7B5817412D5645104fb8DD6c113B4",
+  "recordId": "SpecH1022A",
+  "status": "CONFIRMED",
+  "revision": 2,
+  "certificate": "fe373cf481604198c66adc3100637652bb525b3180e9ceae16164fe6dc74fae8",
+  "result": {
+    "matchedCount": 2,
+    "totalCost": 2,
+    "pairs": [
+      {
+        "cost": 1,
+        "left": "L1",
+        "right": "R2",
+        "tick_delta": 0,
+        "value_delta": 1
+      },
+      {
+        "cost": 1,
+        "left": "L2",
+        "right": "R1",
+        "tick_delta": 0,
+        "value_delta": 1
+      }
+    ],
+    "unmatchedLeft": [
+      "L3"
+    ],
+    "unmatchedRight": [
+      "R3"
+    ]
   },
-  "priorSpecPairNormalWalletConnection": "Previously connected correct owner on Studio61999 via ordinary Connect; no unsafe override clicked. This does not prove the new business lifecycle.",
-  "currentScope": "Prepared local publication snapshot; root must verify public bytes and actual wallet/contract lifecycle before a Project submission."
+  "transactions": [
+    {
+      "method": "open_pair",
+      "hash": "0x289bf8502ddd51235bc3588705bc5f4a5d4884ed2a79466a04d8c0e7404a038c",
+      "finalized": true,
+      "normalMajorityUniqueLeaderSuccess": true,
+      "value": 0
+    },
+    {
+      "method": "derive_pair",
+      "hash": "0x67a1c5206b4a6fddc842c9c2014bd7a18ff0827779d3f85d83be88d577eb668b",
+      "finalized": true,
+      "normalMajorityUniqueLeaderSuccess": true,
+      "value": 0
+    },
+    {
+      "method": "confirm_pair",
+      "hash": "0x06be650471a4fc7f150c4d4888913b56291ba2f4efe994afc5cea31039d5cb17",
+      "finalized": true,
+      "normalMajorityUniqueLeaderSuccess": true,
+      "value": 0
+    }
+  ],
+  "syntheticInputsOnly": true,
+  "oneOperator": true,
+  "independentAdoptionClaim": false,
+  "actualProjectSubmitted": false,
+  "walkthrough": "LIVE_WALKTHROUGH.md",
+  "evidence": "evidence/live/main-workflow.json"
 }

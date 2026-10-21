@@ -1,0 +1,477 @@
+{
+  "at": "2026-10-21T17:44:04.965Z",
+  "profileSeq": 7,
+  "project": "SpecPair",
+  "method": "derive_pair",
+  "args": [
+    "SpecH1022A",
+    0
+  ],
+  "transactionHash": "0x67a1c5206b4a6fddc842c9c2014bd7a18ff0827779d3f85d83be88d577eb668b",
+  "rawFinalityAndBindingsChecked": true,
+  "exactExpectedPairingVerified": true,
+  "sourceSnapshotsAndPolicyUnchanged": true,
+  "calldataProof": "07-spec-pair-derive-wallet-offline-decode-001.json",
+  "userManuallyConfirmed": true,
+  "rootWarningOverrideClicked": false,
+  "record": {
+    "certificate_id": "fe373cf481604198c66adc3100637652bb525b3180e9ceae16164fe6dc74fae8",
+    "history": [
+      {
+        "at": 1792604070,
+        "certificate_id": "",
+        "revision": 0,
+        "status": "OPEN"
+      },
+      {
+        "at": 1792604564,
+        "certificate_id": "fe373cf481604198c66adc3100637652bb525b3180e9ceae16164fe6dc74fae8",
+        "revision": 1,
+        "status": "DERIVED"
+      }
+    ],
+    "last_capture": {
+      "binding": {
+        "chain_id": 61999,
+        "contract": "0x34d2df8e89d7b5817412d5645104fb8dd6c113b4",
+        "locators": [
+          {
+            "sha256": "89f2fef86f9c982842c99b414142316f4356858018367ac1473c10662f11281f",
+            "url": "https://raw.githubusercontent.com/complexinde/spec-pair/6ffb9c8cebc523e71923122608d53b57aa5d0c77/profile07/projects/spec-pair/fixtures/left.json"
+          },
+          {
+            "sha256": "039bb98356382cc978ab09f35c87b01da4adc58db43fc7f0e69a59fec5e716f7",
+            "url": "https://raw.githubusercontent.com/complexinde/spec-pair/6ffb9c8cebc523e71923122608d53b57aa5d0c77/profile07/projects/spec-pair/fixtures/right.json"
+          }
+        ],
+        "observed_at": 1792604564,
+        "operation": "derive",
+        "owner": "0x853c1f6c84ad7b01ab51695228a643da26d795ca",
+        "policy": {
+          "tick_tolerance": 0,
+          "tick_weight": 1,
+          "value_tolerance": 1,
+          "value_weight": 1
+        },
+        "protocol": "SpecPair-v1",
+        "record_id": "SpecH1022A",
+        "revision": 0
+      },
+      "result": {
+        "assignment_vector": [
+          1,
+          0,
+          3
+        ],
+        "decision": "MATCHED",
+        "grid": [
+          [
+            {
+              "admissible": true,
+              "cost": 1,
+              "left": "L1",
+              "reason": "ADMISSIBLE",
+              "right": "R1",
+              "tick_delta": 0,
+              "value_delta": 1
+            },
+            {
+              "admissible": true,
+              "cost": 1,
+              "left": "L1",
+              "reason": "ADMISSIBLE",
+              "right": "R2",
+              "tick_delta": 0,
+              "value_delta": 1
+            },
+            {
+              "admissible": false,
+              "cost": null,
+              "left": "L1",
+              "reason": "UNIT",
+              "right": "R3",
+              "tick_delta": 0,
+              "value_delta": 5
+            }
+          ],
+          [
+            {
+              "admissible": true,
+              "cost": 1,
+              "left": "L2",
+              "reason": "ADMISSIBLE",
+              "right": "R1",
+              "tick_delta": 0,
+              "value_delta": 1
+            },
+            {
+              "admissible": false,
+              "cost": null,
+              "left": "L2",
+              "reason": "VALUE_TOLERANCE",
+              "right": "R2",
+              "tick_delta": 0,
+              "value_delta": 3
+            },
+            {
+              "admissible": false,
+              "cost": null,
+              "left": "L2",
+              "reason": "UNIT",
+              "right": "R3",
+              "tick_delta": 0,
+              "value_delta": 3
+            }
+          ],
+          [
+            {
+              "admissible": false,
+              "cost": null,
+              "left": "L3",
+              "reason": "CATEGORY",
+              "right": "R1",
+              "tick_delta": 0,
+              "value_delta": 4
+            },
+            {
+              "admissible": false,
+              "cost": null,
+              "left": "L3",
+              "reason": "CATEGORY",
+              "right": "R2",
+              "tick_delta": 0,
+              "value_delta": 6
+            },
+            {
+              "admissible": false,
+              "cost": null,
+              "left": "L3",
+              "reason": "CATEGORY",
+              "right": "R3",
+              "tick_delta": 0,
+              "value_delta": 0
+            }
+          ]
+        ],
+        "matched_count": 2,
+        "pairs": [
+          {
+            "cost": 1,
+            "left": "L1",
+            "right": "R2",
+            "tick_delta": 0,
+            "value_delta": 1
+          },
+          {
+            "cost": 1,
+            "left": "L2",
+            "right": "R1",
+            "tick_delta": 0,
+            "value_delta": 1
+          }
+        ],
+        "total_cost": 2,
+        "unmatched_left": [
+          "L3"
+        ],
+        "unmatched_right": [
+          "R3"
+        ]
+      },
+      "sources": [
+        {
+          "records": [
+            {
+              "category": "sample",
+              "id": "L1",
+              "tick": 10,
+              "unit": "ticks",
+              "value": 0
+            },
+            {
+              "category": "sample",
+              "id": "L2",
+              "tick": 10,
+              "unit": "ticks",
+              "value": 2
+            },
+            {
+              "category": "other",
+              "id": "L3",
+              "tick": 10,
+              "unit": "ticks",
+              "value": 5
+            }
+          ],
+          "version": 1
+        },
+        {
+          "records": [
+            {
+              "category": "sample",
+              "id": "R1",
+              "tick": 10,
+              "unit": "ticks",
+              "value": 1
+            },
+            {
+              "category": "sample",
+              "id": "R2",
+              "tick": 10,
+              "unit": "ticks",
+              "value": -1
+            },
+            {
+              "category": "sample",
+              "id": "R3",
+              "tick": 10,
+              "unit": "seconds",
+              "value": 5
+            }
+          ],
+          "version": 1
+        }
+      ]
+    },
+    "locators": [
+      {
+        "sha256": "89f2fef86f9c982842c99b414142316f4356858018367ac1473c10662f11281f",
+        "url": "https://raw.githubusercontent.com/complexinde/spec-pair/6ffb9c8cebc523e71923122608d53b57aa5d0c77/profile07/projects/spec-pair/fixtures/left.json"
+      },
+      {
+        "sha256": "039bb98356382cc978ab09f35c87b01da4adc58db43fc7f0e69a59fec5e716f7",
+        "url": "https://raw.githubusercontent.com/complexinde/spec-pair/6ffb9c8cebc523e71923122608d53b57aa5d0c77/profile07/projects/spec-pair/fixtures/right.json"
+      }
+    ],
+    "owner": "0x853c1f6c84ad7b01ab51695228a643da26d795ca",
+    "policy": {
+      "tick_tolerance": 0,
+      "tick_weight": 1,
+      "value_tolerance": 1,
+      "value_weight": 1
+    },
+    "reason": "",
+    "record_id": "SpecH1022A",
+    "result": {
+      "assignment_vector": [
+        1,
+        0,
+        3
+      ],
+      "decision": "MATCHED",
+      "grid": [
+        [
+          {
+            "admissible": true,
+            "cost": 1,
+            "left": "L1",
+            "reason": "ADMISSIBLE",
+            "right": "R1",
+            "tick_delta": 0,
+            "value_delta": 1
+          },
+          {
+            "admissible": true,
+            "cost": 1,
+            "left": "L1",
+            "reason": "ADMISSIBLE",
+            "right": "R2",
+            "tick_delta": 0,
+            "value_delta": 1
+          },
+          {
+            "admissible": false,
+            "cost": null,
+            "left": "L1",
+            "reason": "UNIT",
+            "right": "R3",
+            "tick_delta": 0,
+            "value_delta": 5
+          }
+        ],
+        [
+          {
+            "admissible": true,
+            "cost": 1,
+            "left": "L2",
+            "reason": "ADMISSIBLE",
+            "right": "R1",
+            "tick_delta": 0,
+            "value_delta": 1
+          },
+          {
+            "admissible": false,
+            "cost": null,
+            "left": "L2",
+            "reason": "VALUE_TOLERANCE",
+            "right": "R2",
+            "tick_delta": 0,
+            "value_delta": 3
+          },
+          {
+            "admissible": false,
+            "cost": null,
+            "left": "L2",
+            "reason": "UNIT",
+            "right": "R3",
+            "tick_delta": 0,
+            "value_delta": 3
+          }
+        ],
+        [
+          {
+            "admissible": false,
+            "cost": null,
+            "left": "L3",
+            "reason": "CATEGORY",
+            "right": "R1",
+            "tick_delta": 0,
+            "value_delta": 4
+          },
+          {
+            "admissible": false,
+            "cost": null,
+            "left": "L3",
+            "reason": "CATEGORY",
+            "right": "R2",
+            "tick_delta": 0,
+            "value_delta": 6
+          },
+          {
+            "admissible": false,
+            "cost": null,
+            "left": "L3",
+            "reason": "CATEGORY",
+            "right": "R3",
+            "tick_delta": 0,
+            "value_delta": 0
+          }
+        ]
+      ],
+      "matched_count": 2,
+      "pairs": [
+        {
+          "cost": 1,
+          "left": "L1",
+          "right": "R2",
+          "tick_delta": 0,
+          "value_delta": 1
+        },
+        {
+          "cost": 1,
+          "left": "L2",
+          "right": "R1",
+          "tick_delta": 0,
+          "value_delta": 1
+        }
+      ],
+      "total_cost": 2,
+      "unmatched_left": [
+        "L3"
+      ],
+      "unmatched_right": [
+        "R3"
+      ]
+    },
+    "revision": 1,
+    "sources": [
+      {
+        "records": [
+          {
+            "category": "sample",
+            "id": "L1",
+            "tick": 10,
+            "unit": "ticks",
+            "value": 0
+          },
+          {
+            "category": "sample",
+            "id": "L2",
+            "tick": 10,
+            "unit": "ticks",
+            "value": 2
+          },
+          {
+            "category": "other",
+            "id": "L3",
+            "tick": 10,
+            "unit": "ticks",
+            "value": 5
+          }
+        ],
+        "version": 1
+      },
+      {
+        "records": [
+          {
+            "category": "sample",
+            "id": "R1",
+            "tick": 10,
+            "unit": "ticks",
+            "value": 1
+          },
+          {
+            "category": "sample",
+            "id": "R2",
+            "tick": 10,
+            "unit": "ticks",
+            "value": -1
+          },
+          {
+            "category": "sample",
+            "id": "R3",
+            "tick": 10,
+            "unit": "seconds",
+            "value": 5
+          }
+        ],
+        "version": 1
+      }
+    ],
+    "status": "DERIVED"
+  },
+  "proof": {
+    "hash": "0x67a1c5206b4a6fddc842c9c2014bd7a18ff0827779d3f85d83be88d577eb668b",
+    "raw": {
+      "hash": "0x67a1c5206b4a6fddc842c9c2014bd7a18ff0827779d3f85d83be88d577eb668b",
+      "from_address": "0x853c1f6C84aD7B01aB51695228a643Da26d795ca",
+      "to_address": "0x34d2DF8E89d7B5817412D5645104fb8DD6c113B4",
+      "value": 0,
+      "status": "FINALIZED",
+      "execution_mode": "NORMAL",
+      "leader_only": false,
+      "result_name": "MAJORITY_AGREE",
+      "consensus_data": {
+        "leader_receipt": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS"
+          }
+        ]
+      }
+    },
+    "sdk": {
+      "hash": "0x67a1c5206b4a6fddc842c9c2014bd7a18ff0827779d3f85d83be88d577eb668b",
+      "from_address": "0x853c1f6C84aD7B01aB51695228a643Da26d795ca",
+      "sender": "0x853c1f6C84aD7B01aB51695228a643Da26d795ca",
+      "to_address": "0x34d2DF8E89d7B5817412D5645104fb8DD6c113B4",
+      "recipient": "0x34d2DF8E89d7B5817412D5645104fb8DD6c113B4",
+      "status": 7,
+      "statusName": "FINALIZED",
+      "execution_mode": "NORMAL",
+      "leader_only": false,
+      "result_name": "MAJORITY_AGREE",
+      "result": 6,
+      "consensus_data": {
+        "leader_receipt": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS"
+          }
+        ]
+      }
+    }
+  },
+  "pending": null,
+  "busy": false
+}
