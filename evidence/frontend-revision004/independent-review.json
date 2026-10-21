@@ -1,0 +1,149 @@
+{
+  "schema": "genlayer07.public-boundary.independent-peer.v4",
+  "at": "2026-10-21T19:01:25.213Z",
+  "reviewer": "/root/genlayer_contract_pair02",
+  "author": "/root/genlayer_projects05",
+  "status": "PASS_WITHIN_REVIEWED_SCOPE",
+  "results": [
+    {
+      "id": "07-PUBLIC-ERROR-NOTICE-TRAIL",
+      "status": "fixed",
+      "evidence": "Exact004 actual main→WalletSession→installed officialSDK1.1.8 read/provider/postproof-read Error paths no longer copy the fictional arbitrary text to any modeled DOM/trail. Fixed UNVERIFIED diagnostics remain visible and original unknown metadata stays blocked."
+    },
+    {
+      "id": "07-STALE-PUBLIC-RECEIPT-CONTEXT",
+      "status": "fixed",
+      "evidence": "Original proven A receipt is removed on record/address/account/chain context changes and is not reused after successful B read or same-context plain read. Newly completing late A read callbacks remain discarded for record/address/account/chain changes."
+    },
+    {
+      "id": "07-SUPPLIED-SDK-LEADER-ABSENCE",
+      "status": "fixed",
+      "evidence": "Actual SDK wait result explicitly supplying [] or validator-only leader_receipt now rejects before business read or public receipt, while a valid independently successful raw response is provided. Exact original saved hash/context bytes remain. Multiple/failed SDK leaders and bad raw bindings remain rejected."
+    }
+  ],
+  "inputRevision": {
+    "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/project07-public-boundary-revision-004.json",
+    "bytes": 2052,
+    "sha256": "39fc0fa317c7b7a618de4757caf33cda9f0af4e322d4e2f0d899fb231836fa0d"
+  },
+  "inputCompleteUploadManifest": {
+    "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/project07-public-boundary-complete-upload-manifest-004.json",
+    "bytes": 39611,
+    "sha256": "48de7c36ecade3afb201d9a29187d609abbc2e961e168b5e458eb86cc8bb762b"
+  },
+  "independentRuntime": {
+    "probes": 52,
+    "originalBoundaryProbes": 50,
+    "additionalSameRecordControls": 2,
+    "harnessErrors": 0,
+    "explicitPostRunAssertions": 118,
+    "productionMainShellWallet": true,
+    "actualInstalledSdk": "1.1.8",
+    "transpilation": "Actual frozen TypeScript modules and JSON fixtures imported in RAM, actual SDK/viem packages; no wallet/module mock",
+    "io": "Synthetic DOM and controlled fictional provider/HTTP only; external fetch impossible",
+    "evidence": {
+      "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/project07-public-boundary-independent-runtime-004.json",
+      "bytes": 28896,
+      "sha256": "1a6303f107834cc0604b353253da2a7a6e0f59afa7d679a0994ea2b85533e766"
+    },
+    "script": {
+      "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/peer-project07-public-boundary-runtime-004.mjs",
+      "bytes": 13834,
+      "sha256": "114fed403d630213c635cc9d7cc6616d2fd54001133d1e4a5b7ae88ced6f858c"
+    },
+    "original003ReproducerPreserved": {
+      "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/peer-project07-additional-public-sinks-003.mjs",
+      "bytes": 13204,
+      "sha256": "0ca3a021f4a3bd9d41ef16c1e49e08acb7bf6dd3cc416d0f654538416a55f16c"
+    }
+  },
+  "artifactVerification": {
+    "checks": 714,
+    "issues": 0,
+    "evidence": {
+      "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/project07-public-boundary-independent-artifacts-004.json",
+      "bytes": 151012,
+      "sha256": "86a4ed9faffa7c3a5cbdad10b09e00e7881b9a26e5a1f4dc6b3de4fe8c22e298"
+    },
+    "script": {
+      "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/peer-project07-public-boundary-artifacts-004.mjs",
+      "bytes": 6760,
+      "sha256": "fdffc86b6c2ee6fb53ffb422b86968adccdb98a1069effbfe062bfa461fc1c08"
+    },
+    "scope": [
+      "Current frontend+dist and immutable candidate every byte/size/hash; Python canonical input tree SHA recomputed.",
+      "Exact baseline003 copy and old report/history artifacts/protected contract/fixtures/current domain/main/context/package/lock/SDKtests unchanged.",
+      "Wallet source differs only in leaders.length>1→leaders.length!==1; pending/first-provider4001/one-shot/recovery/transport code byte-identical.",
+      "Only shell/wallet/new regression and existing connect-shell expectation text changed. Existing connect-race account/disabled/no-Connected assertions remain.",
+      "Corrected RED13failed14passed each and focused27green, author full308front/55actualSDK/2tscVite logs read and hash checked; initial nullable ABI test type failure retained.",
+      "76 complete frontend/docs candidate upserts:38 each +root4+freshpeer1=43≤49; unique paths/no dependencies/cache/env; all source and current compiled assets included; root live README/LIVE_STATUS/deployment/history/walkthrough/live evidence excluded."
+    ]
+  },
+  "verificationEvidenceReadNotRerun": {
+    "authorFullFrontendPassed": [
+      153,
+      155
+    ],
+    "authorActualContractSdkPassed": [
+      30,
+      25
+    ],
+    "authorTscViteExitCodes": [
+      0,
+      0
+    ],
+    "authorFocusedActualSDKMainPassed": [
+      27,
+      27
+    ],
+    "reviewerFullSuiteOrBuildRerun": false
+  },
+  "retainedControls": [
+    "Actual unknown provider error and official fallback literal produce only one original mutation, keep hash:null, and reject forced resubmit.",
+    "Postproof business-read error and SDK/raw proof contradictions retain original pending byte-for-byte; no receipt is displayed.",
+    "Normal legitimate actual Open and original-hash Observe retain checksum transport/official envelope, mandatory original raw consensus proof and normal resolved-intent clearing.",
+    "Late duplicate unchanged provider notifications preserve valid context, while changed account/chain invalidates current loaded record and public evidence.",
+    "Source-only exports omit receipt/service sentinel."
+  ],
+  "minorFindings": [
+    {
+      "id": "07-SAME-RECORD-OLD-RECEIPT-DURING-NEW-UNKNOWN",
+      "priority": 3,
+      "status": "observed_nonblocking_additional_control",
+      "location": "Both frontend/src/shell.ts action closure (line23)",
+      "evidence": "After a successful synthetic Observe A, starting derive for that same loaded A and making the original provider throw leaves the earlier proven receipt in the panel. The new derive pending has hash:null and method derive_pair/derive_program; notice is explicitly UNVERIFIED. Two extra actual-main controls reproduce this.",
+      "calibration": "Original cross-record/context P2 is closed. This is a same-record historical/current-action presentation distinction, not shown to bypass proof, clear pending, send twice, use the wrong signer or turn a failed raw transaction into success. The visible UNVERIFIED and pending information provide counterevidence against stronger impact.",
+      "futureDirection": "If separately scoped, clear or label the prior receipt when starting a new action before awaiting wallet work, while preserving pending and proving normal success. Do not silently change the frozen004 artifact."
+    }
+  ],
+  "outstandingImportantOrCriticalWithinReviewedScope": 0,
+  "existing003LiveWorkflowEvidenceHashesVerified": [
+    {
+      "project": "spec-pair",
+      "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/07-spec-pair-live-main-workflow-complete-001.json",
+      "bytes": 1973,
+      "sha256": "5e8e10749a2fccc0b2f0a2d644d74c179b73160a3da0bd7d73cd0fa61b2f867c",
+      "frontendRevision": 3
+    },
+    {
+      "project": "lane-ledger",
+      "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/07-lane-ledger-live-main-workflow-complete-001.json",
+      "bytes": 2802,
+      "sha256": "447b8650fbfbec9016fb463ff69d19be01be2a88a54bd2485f1673092f73b053",
+      "frontendRevision": 3
+    }
+  ],
+  "current004LiveWorkflowVerified": false,
+  "limits": [
+    "Independent offline verification of exact004 hash-bound public-sink/leader-presence repair only, not an exhaustive all-sinks/security/domain review.",
+    "No genuine provider, UI, RPC/network, wallet, chain mutation, warning action, publication or Portal submission. All sentinels are fictional noncredentials; no real private object is read or leaked.",
+    "The whole frontend/build/contract test suites were read and hash verified, not independently rerun; exact actual-module52 probes were independently executed.",
+    "Official SDK internal console implementation is unchanged; test-process output is suppressed for fictional SDK boundary logs.",
+    "Does not supersede or rewrite historical003 peer PASS or real CONFIRMED demonstrations. Those workflow files were only byte-checked;004 has not been published or exercised live.",
+    "This peer does not inspect browser upload queues/remote assets/old live staging; the new complete manifest explicitly excludes root-controlled live metadata.",
+    "Existing session/RAM storage loss and unrelated external-tab submissions remain documented limitations."
+  ],
+  "authorSourceOrAssetOrOldStageModified": false,
+  "centralRegistryModified": false,
+  "newZIPCreated": false
+}

@@ -52,7 +52,7 @@ function assertSDK(receipt:GenLayerTransaction|undefined,p:Pending):void{
  if(execution!==undefined&&execution!=='FINISHED_WITH_RETURN')throw Error('SDK execution conflicts with successful raw leader; pending retained.');
  // Stable SDK1.1.8 has no isSuccessful export. Available fields are checked above;
  // missing fields remain missing and independent raw consensus proof is mandatory.
- const supplied=receipt.consensus_data?.leader_receipt;if(supplied!==undefined){if(!Array.isArray(supplied))throw Error('SDK leader shape conflicts; pending retained.');const leaders=supplied.filter(v=>v.mode==='leader');if(leaders.length>1||leaders.some(v=>v.execution_result!=='SUCCESS'))throw Error('SDK leader execution conflicts; pending retained.');}
+ const supplied=receipt.consensus_data?.leader_receipt;if(supplied!==undefined){if(!Array.isArray(supplied))throw Error('SDK leader shape conflicts; pending retained.');const leaders=supplied.filter(v=>v.mode==='leader');if(leaders.length!==1||leaders.some(v=>v.execution_result!=='SUCCESS'))throw Error('SDK leader execution conflicts; pending retained.');}
  // Missing Studio fields remain missing. Numeric zero lost by viem is not synthesized.
 }
 export class WalletSession{

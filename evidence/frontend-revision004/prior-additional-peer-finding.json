@@ -1,0 +1,111 @@
+{
+  "schema": "genlayer07.supplemental-public-sinks.peer.v1",
+  "at": "2026-10-21T18:50:01.291Z",
+  "reviewer": "/root/genlayer_contract_pair02",
+  "status": "CHANGES_REQUESTED_WITHIN_ADDITIONAL_OFFLINE_SCOPE",
+  "scope": "ONLY07 frozen revision003: public error/receipt sinks and supplied SDK leader evidence. Supplemental to unchanged historical one-shot peer; not a rewrite of its prior PASS or live evidence.",
+  "sourceRevision": {
+    "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/project07-one-shot-revision-003.json",
+    "bytes": 1729,
+    "sha256": "cb8f631f2ccf4b1504e1e9b0de923c8997e3acd9efeeb25eb57104d9dfcef408"
+  },
+  "originalHistoricalPeerUnmodified": {
+    "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/project07-one-shot-peer-review-003.json",
+    "bytes": 8340,
+    "sha256": "c84e2772a67b9a00391a9f14759dff0f2f00f92173ad746df937ad03af94c6b9"
+  },
+  "runtime": {
+    "probes": 50,
+    "perPackage": 25,
+    "harnessErrors": 0,
+    "actualProductionMainShellWallet": true,
+    "actualInstalledOfficialSdk": "1.1.8",
+    "networkBoundary": "Every fetch/provider operation is controlled fictional I/O; no real RPC/UI/wallet",
+    "currentFrontendFilesRechecked": 54,
+    "evidence": {
+      "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/project07-additional-public-sinks-independent-runtime-003.json",
+      "bytes": 27181,
+      "sha256": "5d9dde1574e80da762346404774b0635ab2a59388717a5c84937356e5e7ba752"
+    },
+    "script": {
+      "path": "C:/Users/Administrator/Documents/ChatGPT/web3/outputs/genlayer-builders-2026-10-21/peer-project07-additional-public-sinks-003.mjs",
+      "bytes": 13204,
+      "sha256": "0ca3a021f4a3bd9d41ef16c1e49e08acb7bf6dd3cc416d0f654538416a55f16c"
+    }
+  },
+  "findings": [
+    {
+      "id": "07-PUBLIC-ERROR-NOTICE-TRAIL",
+      "priority": 2,
+      "status": "reproduced",
+      "location": "contributions/genlayer-2026-10-21/profile07/projects/{spec-pair,lane-ledger}/frontend/src/shell.ts:19",
+      "source": "Arbitrary Error text from actual official SDK gen_call/provider/postproof business-read I/O.",
+      "control": "run catches the exception and directly calls log(error.message). log copies it to notice and a trail node.",
+      "sink": "Public DOM notice/trail.",
+      "reachableEvidence": "Both packages actual main Load, ordinary Open provider error and resumed original-hash postproof read error display the independent fictional noncredential sentinel. No module or WalletSession was mocked.",
+      "impact": "Unexpected remote/provider error details are displayed publicly within the application rather than constrained to a fixed diagnostic.",
+      "counterevidence": "No real private data, exfiltration or active attack was used or shown. The one-shot ABI fallback error path itself produced its guard message rather than echoing the original sentinel. Existing unknown metadata blocks resubmission.",
+      "minimalFixDirection": "Use fixed public diagnostics for I/O errors at actual run/report boundaries; leave original pending/hash and public validated hash fields intact."
+    },
+    {
+      "id": "07-STALE-PUBLIC-RECEIPT-CONTEXT",
+      "priority": 2,
+      "status": "reproduced",
+      "location": "contributions/genlayer-2026-10-21/profile07/projects/{spec-pair,lane-ledger}/frontend/src/shell.ts:20-21",
+      "source": "A previously proven A receipt in WalletSession.evidence plus record/address/account/chain context change or later plain read.",
+      "control": "clear invalidates chain record but never clears receipt. accept renders wallet.evidence unconditionally, including after plain read of another visible context.",
+      "sink": "Receipt panel next to a different visible or loaded record/wallet context.",
+      "reachableEvidence": "For each package a successful A Observe is followed by recordId/address/account/chain change: receipt remains. For record and address cases, successful B read still displays A hash. Same-context plain read also republishes old evidence.",
+      "impact": "A true receipt for A can be presented next to B or a disconnected/new wallet without explicit original-context binding. This is display misattribution, not a demonstrated wrong-chain write.",
+      "counterevidence": "The receipt being displayed passed original SDK/raw proof for A. Context tokens correctly discard a newly completing delayed A read after ID/address/account/chain changes; none of those delayed cases displays a new A record. No wrong target/signer action was observed.",
+      "minimalFixDirection": "Clear public receipt immediately on context/load/action changes; display receipt only from the just-completed act/resume after current token and domain validation, with explicit original public context. A plain read must not reuse WalletSession.evidence."
+    },
+    {
+      "id": "07-SUPPLIED-SDK-LEADER-ABSENCE",
+      "priority": 2,
+      "status": "reproduced",
+      "location": "contributions/genlayer-2026-10-21/profile07/projects/{spec-pair,lane-ledger}/frontend/src/wallet.ts:55",
+      "source": "Actual SDK receipt explicitly supplies consensus_data.leader_receipt=[] or only mode=validator entries, followed by independently valid successful raw receipt for the exact original transaction.",
+      "control": "The check rejects leaders.length>1 or failed leaders, allowing zero mode=leader entries in a supplied list.",
+      "sink": "Observe completion, pending clearing and receipt display.",
+      "reachableEvidence": "Both packages actual original-hash Observe accept supplied [] and validator-only, display receipt, execute business read and remove exact saved pending. The transport gives the first SDK response that explicit list and the second raw response a valid unique mode=leader SUCCESS.",
+      "impact": "An explicit absence of SDK leader evidence is treated like an omitted optional field, weakening the intended conflict check across supplied observations.",
+      "counterevidence": "Independent raw still must be FINALIZED, NORMAL, zero value, exact hash/from/target, MAJORITY_AGREE and unique successful mode=leader. No false raw success or failed transaction acceptance was demonstrated. SDK multiple/failed leaders and bad raw binding remain rejected with original pending retained.",
+      "minimalFixDirection": "If SDK leader_receipt is present, require object-shaped entries and exactly one mode=leader with SUCCESS. Continue allowing truly missing optional SDK fields only when strict independent raw proof succeeds."
+    }
+  ],
+  "retainedControls": [
+    "Generic original-provider unknown and official could-not-decode fallback each invoke the original provider exactly once, retain hash:null public intent and block a forced second Open event.",
+    "Postproof business-read error retains exact original saved hash/context bytes. Bad raw sender or array-shaped leader execution and SDK multiple/failed leaders retain the exact original pending and show no receipt.",
+    "Fresh delayed A callback after record/address/account/chain changes is rejected by RecordContext, so this is not a new write-ID race.",
+    "Normal Open and original-hash Observe still execute through official five-parameter SDK envelope with zero value and one original mutation.",
+    "Validated source-only Blob exports omit receipt hash and fictional service sentinel.",
+    "Delayed duplicate identical accounts/chain events keep the valid existing account; actual changed events invalidate account/loaded state."
+  ],
+  "projects": [
+    {
+      "project": "spec-pair",
+      "frontendSourceTreeSha256": "4d3d37199546d546af7d375f3641483517cd7f50eb67c504a5e367731c128ecf",
+      "walletSha256": "da927e788ed807a085ae67e7dc13faa14c3434e8e45b6566a23bc4e2789879af",
+      "shellSha256": "ac92ce400130c63f577f6caa14e4bfa0ac4e915d9475b1df249de8967c8684ca",
+      "mainSha256": "5377c60bd9e7758a61e9a499cb6d220ddcf526fe6b2fcbefcdc5c8b2e588a76d"
+    },
+    {
+      "project": "lane-ledger",
+      "frontendSourceTreeSha256": "cc236302a7bcf1be8a523a523cf7390e1cee55cd4b9bf36596ef921b2534b7a8",
+      "walletSha256": "7c8daabe72f61e6a0dc58fda550a02f19fa055bcc6b412a6a9980cb3f5871218",
+      "shellSha256": "ac92ce400130c63f577f6caa14e4bfa0ac4e915d9475b1df249de8967c8684ca",
+      "mainSha256": "ce3e744437dd4c373fa0d2b081fa403a98cb94a92c4994f81c85143ac0cdc177"
+    }
+  ],
+  "limits": [
+    "Only additional public-sink/SDK-supplied-leader boundaries tested; not a repeat full security review or full frontend/build/contract suite.",
+    "Every runtime service/provider response is synthetic; no real private information is read, persisted or claimed to leak. No exploit/exfiltration or wrong-signature claim.",
+    "Does not undo independently verified real Open→Derive→Confirm evidence or modify historical003 peer PASS; the new report requests a separately reviewed subsequent revision if root chooses.",
+    "Unknown/pending proof controls are reported from the exact probes, not a claim all possible provider/storage/concurrency cases are covered.",
+    "No real UI/provider/RPC/network/chain mutation, website/asset/source/package/oldstage/central edits occurred."
+  ],
+  "oldPeerOrSourceEdited": false,
+  "actualLiveWorkflowRetested": false,
+  "realTransactionsRequested": 0
+}
