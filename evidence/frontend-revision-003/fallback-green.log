@@ -1,0 +1,97 @@
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend
+
+stderr | tests/stable-sdk.test.ts > normal SDK write builds one stable consensus envelope and retains intent until an explicit rejection: rejected
+Error using provider for method eth_sendTransaction: Error: Rejected test request before any broadcast
+    at Object.request (C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\tests\stable-sdk.test.ts:16:387)
+    at Object.request (C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\src\wallet.ts:85:31)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at Object.request (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/genlayer-js@1.1.8_eslint@9._82a59d42e342621a83003b11831057a9/node_modules/genlayer-js/dist/index.js:2388:20)
+    at withRetry.delay.count.count (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/buildRequest.ts:163:22)
+    at attemptRetry (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/promise/withRetry.ts:63:22) {
+  code: 4001
+}
+
+stderr | tests/stable-sdk.test.ts > normal SDK write builds one stable consensus envelope and retains intent until an explicit rejection: unknown
+Error using provider for method eth_sendTransaction: Error: Transport lost at external wallet boundary; outcome unknown
+    at Object.request (C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\tests\stable-sdk.test.ts:16:452)
+    at Object.request (C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\src\wallet.ts:85:31)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at Object.request (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/genlayer-js@1.1.8_eslint@9._82a59d42e342621a83003b11831057a9/node_modules/genlayer-js/dist/index.js:2388:20)
+    at withRetry.delay.count.count (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/buildRequest.ts:163:22)
+    at attemptRetry (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/promise/withRetry.ts:63:22)
+
+stderr | tests/stable-sdk.test.ts > official SDK also constructs its documented six-parameter envelope from a six-input ABI without a custom serializer
+Error using provider for method eth_sendTransaction: Error: Rejected before broadcast
+    at Object.request (C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\tests\stable-sdk.test.ts:19:1032)
+    at Object.request (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/genlayer-js@1.1.8_eslint@9._82a59d42e342621a83003b11831057a9/node_modules/genlayer-js/dist/index.js:2388:35)
+    at withRetry.delay.count.count (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/buildRequest.ts:163:22)
+    at attemptRetry (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/promise/withRetry.ts:63:22) {
+  code: 4001
+}
+
+ ✓ tests/stable-sdk.test.ts (6 tests) 78ms
+stderr | tests/one-shot-wallet.test.ts > real SDK fallback cannot issue a second wallet request or erase original unknown intent: could not decode response after wallet boundary; outcome unknown
+Error using provider for method eth_sendTransaction: Error: could not decode response after wallet boundary; outcome unknown
+    at C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\tests\one-shot-wallet.test.ts:6:259
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:863:59
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runSuite (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+
+stderr | tests/one-shot-wallet.test.ts > real SDK fallback cannot issue a second wallet request or erase original unknown intent: could not decode response after wallet boundary; outcome unknown
+Error using provider for method eth_sendTransaction: Error: Only one wallet submission is permitted. Preserve the original outcome and inspect wallet activity.
+    at Object.request (C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\src\wallet.ts:83:24)
+    at Object.request (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/genlayer-js@1.1.8_eslint@9._82a59d42e342621a83003b11831057a9/node_modules/genlayer-js/dist/index.js:2388:35)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at withRetry.delay.count.count (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/buildRequest.ts:163:22)
+    at attemptRetry (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/promise/withRetry.ts:63:22)
+
+stderr | tests/one-shot-wallet.test.ts > real SDK fallback cannot issue a second wallet request or erase original unknown intent: invalid pointer after wallet boundary; outcome unknown
+Error using provider for method eth_sendTransaction: Error: invalid pointer after wallet boundary; outcome unknown
+    at C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\tests\one-shot-wallet.test.ts:6:259
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:863:59
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runSuite (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+
+stderr | tests/one-shot-wallet.test.ts > real SDK fallback cannot issue a second wallet request or erase original unknown intent: invalid pointer after wallet boundary; outcome unknown
+Error using provider for method eth_sendTransaction: Error: Only one wallet submission is permitted. Preserve the original outcome and inspect wallet activity.
+    at Object.request (C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\src\wallet.ts:83:24)
+    at Object.request (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/genlayer-js@1.1.8_eslint@9._82a59d42e342621a83003b11831057a9/node_modules/genlayer-js/dist/index.js:2388:35)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at withRetry.delay.count.count (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/buildRequest.ts:163:22)
+    at attemptRetry (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/viem@2.57.7_typescript@5.9.3/node_modules/viem/utils/promise/withRetry.ts:63:22)
+
+stderr | tests/one-shot-wallet.test.ts > first actual wallet rejection still clears a hashless pending intent without another submission
+Error using provider for method eth_sendTransaction: Error: User rejected first normal request
+    at C:\Users\Administrator\Documents\ChatGPT\web3\contributions\genlayer-2026-10-21\profile07\projects\spec-pair\frontend\tests\one-shot-wallet.test.ts:7:142
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runSuite (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+    at runFiles (file:///C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend/node_modules/.pnpm/@vitest+runner@3.2.4/node_modules/@vitest/runner/dist/chunk-hooks.js:1787:3) {
+  code: 4001
+}
+
+ ✓ tests/one-shot-wallet.test.ts (3 tests) 70ms
+
+ Test Files  2 passed (2)
+      Tests  9 passed (9)
+   Start at  01:11:49
+   Duration  3.48s (transform 567ms, setup 0ms, collect 3.36s, tests 148ms, environment 1ms, prepare 1.95s)
+

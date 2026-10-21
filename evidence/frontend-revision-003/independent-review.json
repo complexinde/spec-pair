@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-21T17:19:43.482Z",
+  "reviewer": "/root/genlayer_builder10",
+  "scope": "Fresh independent narrow peer of frozen Project07 revision003; local source, actual pinned SDK runtime under fully mocked fetch/provider, complete frontend tests and independent tsc/Vite rebuild to tmp, hash-bound publish delta and protected historical artifacts. No UI/CDP, wallets, real RPC/network, real leases, deployments or publication.",
+  "verdict": "PASS_WITHIN_REVIEWED_SCOPE",
+  "blockingFindings": [],
+  "resolvedPriorFinding": {
+    "id": "P1-002-SDK-HIDDEN-RETRY",
+    "status": "FIX_VERIFIED_OFFLINE_IN_003",
+    "cause": "Official1.1.8 could fallback5-to6 after first provider unknown, then SDK4001 could clear pending.",
+    "evidence": "Independent tests import exact hash-bound003 WalletSession and installed official1.1.8. Both actual fallback texts produce only one original-provider mutation and preserve pending through reload/reentry. Later injected SDK4001 without a first actual rejection does not clear pending.",
+    "gate": "Only eth_accounts/eth_chainId reads are delegated. submitted is set before awaiting a fresh chain/account/provider check, so concurrent/fallback mutations cannot race. At most first eth_sendTransaction reaches the original provider. Other mutation aliases reject locally. firstRejected derives only from that first real provider invocation."
+  },
+  "independentTests": {
+    "boundaryCases": 46,
+    "allPassed": true,
+    "details": "Per project: two actualSDK fallback texts; two actual first4001 variants; late account/chain/provider races; actualSDK successful official envelope + strict finality + safe projection; SDK-only4001; twelve denied aliases; later SDK4001 after original unknown; concurrent actualSDK write attempts.",
+    "actualSDKSuccess": "One normal primary5 envelope per project decoded through official ABI: ownsender/intended inner recipient/chain61999/value0/method key. Complete raw FINALIZED NORMAL majority and unique successful leader proof observed before safe receipt projection and business read. All transactions and results are fictional offline mocks.",
+    "fullSuites": [
+      {
+        "project": "spec-pair",
+        "passed": 126,
+        "files": 11,
+        "exitCode": 0
+      },
+      {
+        "project": "lane-ledger",
+        "passed": 128,
+        "files": 11,
+        "exitCode": 0
+      }
+    ],
+    "typeAndBuild": [
+      {
+        "project": "spec-pair",
+        "tscExitCode": 0,
+        "viteExitCode": 0
+      },
+      {
+        "project": "lane-ledger",
+        "tscExitCode": 0,
+        "viteExitCode": 0
+      }
+    ],
+    "buildLocation": "tmp/project07-peer003-build/*; frozen dist not overwritten. Every frozen dist path/byte/hash equals independent output."
+  },
+  "regressionReview": {
+    "officialSerializer": "Installed package and runtime SHA match official pinned1.1.8 unchanged. No SDK patch/custom encoder. Existing real SDK tests retain official5/6-argument behavior.",
+    "rawAndSDKProof": "Source before act and after observe matches002 byte-for-byte, including strict identity/finality/numeric+named contradiction checks, no synthesized missing SDK fields and raw fallback requirements.",
+    "safeEvidence": "Full raw+SDK assertions remain before allowlist projection; actualSDK successful independent mock includes fictional nested sensitive sentinel and proves it absent from evidence.",
+    "providerEvents": "Original delayed/duplicate unchanged-event behavior and invalidation tests retained and full suite green. Gate additionally checks sender/chain/provider immediately before first forwarding.",
+    "lifecycleAndScope": "No environment or lifecycle was touched. Existing deployment provenance is preserved, not reverified or claimed live."
+  },
+  "artifacts": {
+    "descriptor": {
+      "path": "C:\\Users\\Administrator\\Documents\\ChatGPT\\web3\\outputs\\genlayer-builders-2026-10-21\\project07-one-shot-revision-003.json",
+      "sha256": "cb8f631f2ccf4b1504e1e9b0de923c8997e3acd9efeeb25eb57104d9dfcef408"
+    },
+    "uploadManifest": {
+      "path": "C:\\Users\\Administrator\\Documents\\ChatGPT\\web3\\outputs\\genlayer-builders-2026-10-21\\project07-public-upload-manifest-003.json",
+      "sha256": "ac93a52330b1fa16b53cfb8b200255fc8f2766efab4a7eea6f924dee171a49f5",
+      "checkedFiles": 50,
+      "reservedFiles": "Three per-project future peer notice files are only reservations; not claimed present/uploaded."
+    },
+    "projects": [
+      {
+        "project": "spec-pair",
+        "reportSha256": "7701bd11afe731cbd7ca56f817e955f1dd560a198da1e752fc79069bf419cf8c",
+        "sourceTreeSha256": "4d3d37199546d546af7d375f3641483517cd7f50eb67c504a5e367731c128ecf",
+        "walletSha256": "da927e788ed807a085ae67e7dc13faa14c3434e8e45b6566a23bc4e2789879af",
+        "currentFrontendFiles": 27,
+        "frozenDistAndIndependentRebuildFiles": 4,
+        "uploadDeltaFiles": 25,
+        "contractSha256": "135f33e7a0eb1e1da4de08f78d7d0bb6ea8029829379b150a1803d959cf6e1ae",
+        "unchangedFixtures": 5,
+        "protectedFiles": 57,
+        "historicalArtifacts": 7,
+        "previous002SourceAndDistPreserved": true,
+        "officialSDKRuntimeSha256": "577032b22e6077b671a7d27ba8d6dac58eb90ed5892f2a05b11eefc6eef29dd2",
+        "priorProofAndEventsUnchangedOutsideAct": true,
+        "allBytesAndHashesMatched": true
+      },
+      {
+        "project": "lane-ledger",
+        "reportSha256": "da7689fe84cd78f99b4d85957cb680077eb097dcc89bf8d53a3d6ba8009bdd2c",
+        "sourceTreeSha256": "cc236302a7bcf1be8a523a523cf7390e1cee55cd4b9bf36596ef921b2534b7a8",
+        "walletSha256": "7c8daabe72f61e6a0dc58fda550a02f19fa055bcc6b412a6a9980cb3f5871218",
+        "currentFrontendFiles": 27,
+        "frozenDistAndIndependentRebuildFiles": 4,
+        "uploadDeltaFiles": 25,
+        "contractSha256": "48b3a5c678ff2633a10b012f60496653c36061225f93a017e8f5ae539630bca8",
+        "unchangedFixtures": 3,
+        "protectedFiles": 55,
+        "historicalArtifacts": 7,
+        "previous002SourceAndDistPreserved": true,
+        "officialSDKRuntimeSha256": "577032b22e6077b671a7d27ba8d6dac58eb90ed5892f2a05b11eefc6eef29dd2",
+        "priorProofAndEventsUnchangedOutsideAct": true,
+        "allBytesAndHashesMatched": true
+      }
+    ],
+    "independentTestAndLogFiles": [
+      {
+        "path": "tmp/project07-one-shot-peer-tests-003.mjs",
+        "bytes": 9900,
+        "sha256": "3c2a59955dfda3d3c2280243f57bb011b6123527c64fac722038f783f5b1f9db"
+      },
+      {
+        "path": "outputs/genlayer-builders-2026-10-21/project07-one-shot-peer-tests-003.json",
+        "bytes": 19164,
+        "sha256": "2fa35861a1e38b27381a787f5b163878db9d025b6bd4d909680be15bf90bb6d8"
+      },
+      {
+        "path": "outputs/genlayer-builders-2026-10-21/project07-one-shot-peer-003-spec-pair-tests.log",
+        "bytes": 18574,
+        "sha256": "242ecb1a3af5f88b989da7251bb74d01f8a667dd5144456ab5cee57979ee14b0"
+      },
+      {
+        "path": "outputs/genlayer-builders-2026-10-21/project07-one-shot-peer-003-spec-pair-build.log",
+        "bytes": 946,
+        "sha256": "a831ae25ce7189d48f943229416d78412740722def0665d90a4ab1afc5339dd4"
+      },
+      {
+        "path": "outputs/genlayer-builders-2026-10-21/project07-one-shot-peer-003-lane-ledger-tests.log",
+        "bytes": 18692,
+        "sha256": "c39d695f5231e3c56a58d9b4932e908f9fe63a2fc91272f2d1970ed4c8a14ab3"
+      },
+      {
+        "path": "outputs/genlayer-builders-2026-10-21/project07-one-shot-peer-003-lane-ledger-build.log",
+        "bytes": 954,
+        "sha256": "a67ab7b5fbc8b419396e9b26c440dd4a63f7c2f900e777749f8f5f3b943131e1"
+      }
+    ]
+  },
+  "limitations": [
+    "Offline verification does not establish actual wallet approval, successful business execution, public hosting behavior or Portal submission.",
+    "No claim that a wallet warning is resolved or safe to override. Existing origin and user approval policy remains in force.",
+    "Large bundle warning remains: official SDK dependency produces >500kB chunk; it is a performance limitation, not a correctness failure in reviewed scope.",
+    "Future changes or a different SDK/provider require rechecking identities and one-shot behavior.",
+    "Original002 P1 evidence remains valid and retained; it does not approve mutable old002 payloads."
+  ]
+}

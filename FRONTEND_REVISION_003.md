@@ -1,0 +1,22 @@
+# Frontend revision003 — spec-pair
+
+## Revision003: one wallet mutation per act
+
+Independent peer review reproduced an SDK1.1.8 fallback after an ambiguous first wallet request: decoder-like error text caused a five-input request followed by a six-input request, and the latter4001 erased the original unknown intent. Revision002 is superseded and must not be published as the current repair.
+
+The act-specific provider wrapper permits only eth_accounts/eth_chainId reads and one eth_sendTransaction. Every other operation, including signing aliases, account permission requests and chain changes, is rejected locally. The one-shot flag is set before awaiting a fresh exact account/chain/provider check. The original provider is invoked at most once. Only an explicitly observed first provider rejection4001 clears intent; a generic SDK4001 or a later fallback result cannot clear the first unknown. Normal connect uses the original provider. SDK serialization remains official and unchanged; the first request may use either documented envelope, without permitting a second wallet mutation.
+
+Actual SDK regressions use the precise could-not-decode and invalid-pointer trigger texts, verify a single original provider request, preserved same-tab intent and no replay after recovery, and independently test the first rejection including decoder-like text. Twelve unexpected operation aliases are rejected. The full final suite includes the previous checksum/event/ABI/polling/receipt projection controls. There was no external network request, wallet, signature, broadcast or UI operation in these local tests. New independent peer review and root publication/live validation remain pending.
+
+
+AI-assisted prototype; local repair candidate, independent peer review pending at freeze. GenLayerJS is exactly1.1.8 for Stable Studio61999. The deployed contract, algorithms, constructor, fixture bytes and immutable fixture URLs remain unchanged. No redeployment is required by this local change.
+
+This candidate retains revision001 wallet fixes: valid unchanged delayed events preserve the cached account; actual/malformed changes invalidate it; connect rereads chain/accounts and avoids a no-op switch. The connect callback checks identity. SDK target arguments are checksum canonicalized while internal context and original pending metadata remain unchanged.
+
+The official stable SDK supplies the method-key calldata and normal five/six-parameter consensus envelopes; there is no private SDK patch, custom production serializer, fallback to fabricated records, or snapshot-variant change. The stable API polls status FINALIZED with runtime fullTransaction. Stable1.1.8 does not export isSuccessful; its absence is recorded, never synthesized. Every supplied SDK status/binding/execution conflict fails closed, followed by mandatory independent raw proof of the original hash/sender/target/value0, FINALIZED/NORMAL/non-leader-only/MAJORITY_AGREE/unique leader SUCCESS. Pending recovery and no replay remain.
+
+Raw and SDK objects are checked in RAM. Only a whitelist of verified public binding/status/leader execution fields is retained for display; node configuration, unknown subtrees, SDK raw aliases and VM stdout/stderr are omitted. A fictional sentinel regression proves that projection without weakening the failure gate. It never reads real secret values.
+
+Local checks: 126 frontend tests, 30 actual contract SDK tests, TypeScript and Vite exit0. Unmocked installed SDK tests cover checksum+method dispatch, five-input default and six-input ABI encoding, full finalized polling, explicit wallet rejection and unknown intent retention. External boundaries are controlled; these are not wallet/network business transactions. The first six-parameter-only test assumption failed on the documented five-input default and is preserved. Initial type/API diagnostics are preserved. The>500kB SDK bundle notice is nonfatal.
+
+Historical ZIPs/manifests and revision001 and revision002 remain byte-identical. The previous closed peer review applies to that previous frontend, not this revision. Root must obtain fresh independent review, publish normally, compare served assets, then validate actual Open→Derive→Confirm/Revoke and receipts. No publication, actual approval/signature, business write or live success is claimed here. Build-time public_url null fields are historical configuration metadata and do not negate the separately recorded immutable public fixtures and constructors.
