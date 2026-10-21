@@ -1,0 +1,57 @@
+{
+  "id": "spec-pair",
+  "title": "SpecPair",
+  "profile": "07",
+  "kind": "Project",
+  "status": "local_complete_independently_reviewed_not_live",
+  "contract": "contract.py",
+  "contract_sha256": "135f33e7a0eb1e1da4de08f78d7d0bb6ea8029829379b150a1803d959cf6e1ae",
+  "constructor_args": [],
+  "counted_as_independent_ic": false,
+  "local_sdk_tests": 30,
+  "local_frontend_tests": 56,
+  "ai_assisted": true,
+  "synthetic_fixtures": {
+    "left.json": {
+      "bytes": 388,
+      "sha256": "89f2fef86f9c982842c99b414142316f4356858018367ac1473c10662f11281f",
+      "test_url": "https://raw.githubusercontent.com/example/synthetic-fixtures/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/profile07/projects/spec-pair/fixtures/left.json",
+      "public_url": null
+    },
+    "right.json": {
+      "bytes": 392,
+      "sha256": "039bb98356382cc978ab09f35c87b01da4adc58db43fc7f0e69a59fec5e716f7",
+      "test_url": "https://raw.githubusercontent.com/example/synthetic-fixtures/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/profile07/projects/spec-pair/fixtures/right.json",
+      "public_url": null
+    },
+    "policy.json": {
+      "bytes": 91,
+      "sha256": "aaf33acfc14e0d101b2ba0e75286183c2149058478f1a5e5872340c426ec6c4d",
+      "test_url": "https://raw.githubusercontent.com/example/synthetic-fixtures/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/profile07/projects/spec-pair/fixtures/policy.json",
+      "public_url": null
+    }
+  },
+  "network": {
+    "name": "Studio",
+    "chain_id": 61999
+  },
+  "deployment": null,
+  "publication": null,
+  "hosting": null,
+  "live_wallet_business_flow": null,
+  "actual_users": null,
+  "financing": null,
+  "awards": null,
+  "visual_browser_review": null,
+  "description": "Globally reconcile two declared record lists, maximizing admissible one-to-one matches before minimizing exact integer mismatch cost.",
+  "shared_infrastructure_only": [
+    "Exact SDK test compatibility and semantic/schema runner",
+    "Reviewed MetaMask/raw receipt and context guard infrastructure"
+  ],
+  "independent_review": {
+    "status": "independent_read_only_local_review_closed_no_important_findings",
+    "reviewer": "/root/genlayer_projects05",
+    "recorded_by": "/root/genlayer_contract_pair02",
+    "full_suite_rerun_by_reviewer": false
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "project": "SpecPair",
+  "ai_assisted": true,
+  "experimental_prototype": true,
+  "chainId": 61999,
+  "deployment": {
+    "address": "0x34d2DF8E89d7B5817412D5645104fb8DD6c113B4",
+    "hash": "0x546f0c8c2414bd22d1ebb1211f5602287e8d80269c85bddcca0c757a6d1f0560",
+    "status": "FINALIZED",
+    "execution_mode": "NORMAL",
+    "value": 0,
+    "leader_only": false,
+    "result_name": "MAJORITY_AGREE",
+    "unique_leader_execution_result": "SUCCESS",
+    "constructor_args": [],
+    "scope": "Constructor only; no business write/read workflow performed"
+  },
+  "source_sha256": "135f33e7a0eb1e1da4de08f78d7d0bb6ea8029829379b150a1803d959cf6e1ae",
+  "onchain_source_sha256": "135f33e7a0eb1e1da4de08f78d7d0bb6ea8029829379b150a1803d959cf6e1ae",
+  "public_source_verification": "Pending normal bound-browser raw-commit byte verification after upload",
+  "frontend": {
+    "compiled": true,
+    "hosted": false,
+    "wallet_connected": false,
+    "business_live_verified": false
+  },
+  "project_submitted": false,
+  "users": null,
+  "rewards": null,
+  "note": "The reviewed candidate metadata is preserved byte-for-byte as historical local evidence. This file records only the separately verified public constructor deployment. No production safety, real data users or full business workflow is claimed."
+}

@@ -1,0 +1,6 @@
+{
+  "value_tolerance": 1,
+  "tick_tolerance": 0,
+  "value_weight": 1,
+  "tick_weight": 1
+}

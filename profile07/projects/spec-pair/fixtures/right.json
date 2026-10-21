@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "R1",
+      "category": "sample",
+      "unit": "ticks",
+      "value": 1,
+      "tick": 10
+    },
+    {
+      "id": "R2",
+      "category": "sample",
+      "unit": "ticks",
+      "value": -1,
+      "tick": 10
+    },
+    {
+      "id": "R3",
+      "category": "sample",
+      "unit": "seconds",
+      "value": 5,
+      "tick": 10
+    }
+  ]
+}

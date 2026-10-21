@@ -1,0 +1,3 @@
+# SpecPair frontend
+
+Run pnpm install --frozen-lockfile, pnpm test, pnpm build and pnpm dev with Node20.19+/22.12+ and pnpm11.25.0. The app starts with an original synthetic local preview and no public URL or deployment. Actual writes require MetaMask StableStudio61999 and manual real contract/source configuration. Domain UI and editing/export are local explanations, not publication or live results. Unknown outcomes are persisted in session storage before submit, never automatically replayed. Parent README documents the exact API, source hashes, mandatory unformatted raw receipt proof, manual original-hash recovery and limitations. No browser visual/live business QA is claimed.

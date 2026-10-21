@@ -1,0 +1,79 @@
+{
+  "reviewer": "/root/genlayer_projects05",
+  "scope": "Read-only independent local review; no SDK/frontend full suites rerun, no browser/network/chain actions",
+  "checks": [
+    {
+      "project": "spec-pair",
+      "contract_sha256": "135f33e7a0eb1e1da4de08f78d7d0bb6ea8029829379b150a1803d959cf6e1ae",
+      "frontend_source_tree_sha256": "d266ecfba6af263341f3d7f24a7fb33ecb700ea82796a9ed14ad8ec0731d4950",
+      "source_snapshot_sha256": "9c4777196d824a003ac229bb60071f49ba0aaa57ae738fb0600fb5dc84f6e6de",
+      "zip": {
+        "path": "spec-pair-publish.zip",
+        "bytes": 99436,
+        "sha256": "664a17dd792f6fc6ca74770a8bf68daacee7fb9006bd304782cb1b86f315d74b",
+        "crc_verified": true,
+        "all_entry_sha256_verified": true
+      },
+      "file_count": 60,
+      "all_entry_bytes_and_sha256_checked": true,
+      "manifest_equals_archive": true,
+      "zip_crc_failures": 0,
+      "fixtures": [
+        {
+          "name": "left.json",
+          "bytes": 388,
+          "sha256": "89f2fef86f9c982842c99b414142316f4356858018367ac1473c10662f11281f",
+          "exact_lf": true,
+          "public_url": null
+        },
+        {
+          "name": "right.json",
+          "bytes": 392,
+          "sha256": "039bb98356382cc978ab09f35c87b01da4adc58db43fc7f0e69a59fec5e716f7",
+          "exact_lf": true,
+          "public_url": null
+        },
+        {
+          "name": "policy.json",
+          "bytes": 91,
+          "sha256": "aaf33acfc14e0d101b2ba0e75286183c2149058478f1a5e5872340c426ec6c4d",
+          "exact_lf": true,
+          "public_url": null
+        }
+      ],
+      "recorded_sdk_test_count": 30,
+      "recorded_frontend_test_count": 56,
+      "all_external_status_null": true
+    },
+    {
+      "project": "lane-ledger",
+      "contract_sha256": "48b3a5c678ff2633a10b012f60496653c36061225f93a017e8f5ae539630bca8",
+      "frontend_source_tree_sha256": "912d7a5bc89848c36b09c33e86750114c1ea6ea9c270038c4dc0ac5b49d6f77c",
+      "source_snapshot_sha256": "d143e448b4dd3824524fd5a0bf183dfa4d130d53877fdb610d8da3ddc5b18151",
+      "zip": {
+        "path": "lane-ledger-publish.zip",
+        "bytes": 95808,
+        "sha256": "bc9a21c4fee85138dd0d8daf6610a4cfe89e5401ec9b8362fe3ce34bb32c0d84",
+        "crc_verified": true,
+        "all_entry_sha256_verified": true
+      },
+      "file_count": 58,
+      "all_entry_bytes_and_sha256_checked": true,
+      "manifest_equals_archive": true,
+      "zip_crc_failures": 0,
+      "fixtures": [
+        {
+          "name": "program.json",
+          "bytes": 373,
+          "sha256": "188a307035475165d46506d1e40979d73201d672c69ca79f865125d7b82479d8",
+          "exact_lf": true,
+          "public_url": null
+        }
+      ],
+      "recorded_sdk_test_count": 25,
+      "recorded_frontend_test_count": 58,
+      "all_external_status_null": true
+    }
+  ],
+  "result": "All independent artifact checks passed; semantic review is recorded separately."
+}

@@ -1,0 +1,25 @@
+{
+  "synthetic": true,
+  "public_url": null,
+  "publication": null,
+  "sources": {
+    "left.json": {
+      "bytes": 388,
+      "sha256": "89f2fef86f9c982842c99b414142316f4356858018367ac1473c10662f11281f",
+      "test_url": "https://raw.githubusercontent.com/example/synthetic-fixtures/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/profile07/projects/spec-pair/fixtures/left.json",
+      "public_url": null
+    },
+    "right.json": {
+      "bytes": 392,
+      "sha256": "039bb98356382cc978ab09f35c87b01da4adc58db43fc7f0e69a59fec5e716f7",
+      "test_url": "https://raw.githubusercontent.com/example/synthetic-fixtures/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/profile07/projects/spec-pair/fixtures/right.json",
+      "public_url": null
+    },
+    "policy.json": {
+      "bytes": 91,
+      "sha256": "aaf33acfc14e0d101b2ba0e75286183c2149058478f1a5e5872340c426ec6c4d",
+      "test_url": "https://raw.githubusercontent.com/example/synthetic-fixtures/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/profile07/projects/spec-pair/fixtures/policy.json",
+      "public_url": null
+    }
+  }
+}

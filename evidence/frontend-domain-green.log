@@ -1,0 +1,14 @@
+$ vitest run
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile07/projects/spec-pair/frontend
+
+ ✓ tests/context.test.ts (4 tests) 13ms
+ ✓ tests/domain.test.ts (9 tests) 27ms
+ ✓ tests/public-json.test.ts (2 tests) 13ms
+ ✓ tests/wallet.test.ts (38 tests) 49ms
+
+ Test Files  4 passed (4)
+      Tests  53 passed (53)
+   Start at  07:12:36
+   Duration  3.16s (transform 455ms, setup 0ms, collect 1.77s, tests 103ms, environment 2ms, prepare 2.23s)
+

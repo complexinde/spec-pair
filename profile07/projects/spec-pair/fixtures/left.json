@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "L1",
+      "category": "sample",
+      "unit": "ticks",
+      "value": 0,
+      "tick": 10
+    },
+    {
+      "id": "L2",
+      "category": "sample",
+      "unit": "ticks",
+      "value": 2,
+      "tick": 10
+    },
+    {
+      "id": "L3",
+      "category": "other",
+      "unit": "ticks",
+      "value": 5,
+      "tick": 10
+    }
+  ]
+}
